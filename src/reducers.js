@@ -27,6 +27,7 @@ export function mantra(state=[], action) {
 //                 ...state                
 //             ]
 //         default:
+                // return state;
 //             break;
 //     }    
 // }
