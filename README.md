@@ -16,10 +16,17 @@
     - list component
         - unordered list
         - leave blank for now
-    - input component
+            - or receive an array as a prop
+     - input component
         - class
         - should have state for the text in the input box
 
 # React-Redux
 
 - containers directory
+    - MantraListContainer
+    - MantraFormContainer
+- mapStateToProps
+- mapDispatchToProps
+
+
