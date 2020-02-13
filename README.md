@@ -13,8 +13,12 @@
 # React
 
 - components directory
-    - input component
     - list component
+        - unordered list
+        - leave blank for now
+    - input component
+        - class
+        - should have state for the text in the input box
 
 # React-Redux
 
