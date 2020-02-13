@@ -8,7 +8,7 @@
 - actions:
     - ADD_MANTRA
 - reducer:
-    - []
+    - default state: `[]`
 
 # React
 
