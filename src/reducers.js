@@ -16,6 +16,8 @@ export function karma(state={}, action) {
 
     switch(action.type) {
         case ADD_KARMA:
+            // console.table(action.payload)
+            console.table(state);
             return {
                 ...state,
                 ...action.payload

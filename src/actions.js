@@ -5,14 +5,14 @@ export const ADD_KARMA = 'ADD_KARMA';
 export function actionAddMantraWithKarma(mantra) {
     return (dispatch, getState) => {
         dispatch(actionAddMantra(mantra));
-        console.log(getState());
+        // console.table(getState());
         const state = { ...getState() };
-        const count = state.karma[mantra] || 1;
+        const count = state.karma[mantra] || 0;
 
         dispatch({
             type: ADD_KARMA,
             payload: {
-                [mantra]: count
+                [mantra]: count + 1
             }
         })
     }
