@@ -3,7 +3,7 @@ import {
 } from 'react-redux';
 
 import MantraForm from '../components/MantraForm';
-import { actionAddMantra } from '../actions';
+import { actionAddMantraWithKarma } from '../actions';
 
 // we don't need mapStateToProps!
 // we aren't displaying anything from redux state.
@@ -11,7 +11,7 @@ import { actionAddMantra } from '../actions';
 function mapDispatchToProps(dispatch) {
     return {
         handleSubmit: (newMantra) => {
-            dispatch(actionAddMantra(newMantra))
+            dispatch(actionAddMantraWithKarma(newMantra))
         }
     }
 }

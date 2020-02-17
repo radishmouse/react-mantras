@@ -1,4 +1,4 @@
-import { ADD_MANTRA } from "./actions";
+import { ADD_MANTRA, ADD_KARMA } from "./actions";
 
 export function mantras(state=['a', 'b', 'c'], action) {
     const newState = [ ...state ];
@@ -10,6 +10,20 @@ export function mantras(state=['a', 'b', 'c'], action) {
             break;
     }
     return newState;
+}
+
+export function karma(state={}, action) {
+
+    switch(action.type) {
+        case ADD_KARMA:
+            return {
+                ...state,
+                ...action.payload
+            }
+            break;
+        default:
+            return state;
+    }
 }
 
 // export function mantra(state=[], action) {

@@ -8,7 +8,7 @@ import MantraList from '../components/MantraList';
 // we need? mapStateToProps
 function mapStateToProps(state) {
     return {
-        mantras: state
+        mantras: state.mantras
     }
 }
 // we need? mapDispatchToProps
